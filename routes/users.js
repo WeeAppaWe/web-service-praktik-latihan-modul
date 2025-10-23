@@ -8,6 +8,7 @@ router.get('/', function (req, res, next) {
 });
 router.get('/get-all', userController.getUsers);
 router.post('/register', userController.registerUsers);
+router.post('/login', userController.loginUsers);
 router.put('/update/:id', userController.updateUsers);
 router.delete('/delete/:id', userController.deleteUsers);
 
